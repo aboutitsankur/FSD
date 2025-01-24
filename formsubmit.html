@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for Admission</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <script>
+    function data()
+    {
+        var a1=document.getElementById("a").value;
+        var a2=document.getElementById("b").value;
+        var a3=document.getElementById("c").value;
+        var a4=document.getElementById("d").value;
+        var a5=document.getElementById("e").value;
+        var a6=document.getElementById("f").value;
+        var a7=document.getElementById("g").value;
+        var a8=document.getElementById("h").value;
+        var a9=document.getElementById("i").value;
+        var a10=document.getElementById("j").value;
+        var a11=document.getElementById("k").value;
+
+        if(a1==""||a2==""||a3==""||a4==""||a5==""||a6==""||a7==""||a8==""||a9==""||a10==""||a11=="")
+        {
+            alert("All Fields are Mandatory");
+            return false;
+        }
+        else if(a8.length>10||a8.length<10)
+        {
+            alert("Number should be of 10 digits! Please Enter valid number");
+            return false;
+        }
+        else if(a3.length>2||a3.length<2)
+        {
+            alert("Class should be of 2 digits! Please Enter valid class");
+            return false;
+        }
+        else if(isNaN(a8))
+        {
+            alert("Only Numbers are allowed");
+            return false;
+        }
+        else if(isNaN(a3))
+        {
+            alert("Only Numbers are allowed");
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    </script>
+    <h3 align="center">School Admission Form</h3>
+    <form action="submit.html" onsubmit="return data()">
+        <table>
+            <tr class="n1">
+                <td>Student's Name :</td>
+                <td><input type="text" placeholder="First Name" id="a">
+                    <input type="text" placeholder="Middle Name" id="b">
+                    <input type="text" placeholder="Last Name" id="i">
+                </td>
+            </tr>
+            <tr class="n1">
+                <td>Class you want to apply for :</td>
+                <td><input type="text" id="c"></td>
+            </tr>
+            <tr class="n1">
+                <td>Student's DoB :</td>
+                <td><input type="date" id="d"></td>
+            </tr>
+            <tr class="n1"> 
+                <td>Parent's/Guardian Name :</td>
+                <td>
+                    <input type="text" placeholder="First Name" id="e">
+                    <input type="text" placeholder="Middle Name" id="f">
+                    <input type="text" placeholder="Last Name" id="j">
+                </td>
+            </tr>
+            <tr class="n1">
+                <td>Current Address :</td>
+                <td>
+                    <input type="text" maxlength="150" placeholder="Enter the Address"  id="g">
+                </td>
+            </tr>
+            <tr class="n1">
+                <td>Phone :</td>
+                <td>
+                    <input type="text" placeholder="##########" id="h">
+                </td>
+            </tr>
+            <tr class="n1">
+                <td>Email :</td>
+                <td>
+                    <input type="email" id="k">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>   
+    </form>
+</body>
+</html>
