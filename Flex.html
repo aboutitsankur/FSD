@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: ;
+            flex-wrap: wrap;
+            border: 1;
+            align-items: flex-end;
+            align-content: center;
+            gap: 5px;
+            
+        }
+        .cn{
+            width: 100px;
+            height: 150px;
+            border: 1px solid red;
+            border-radius: 25px;
+            border-width: 10px;
+            border-color: black;
+            padding: 3px;
+            background-color: brown;
+            text-align: center;
+            margin: 5px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: content;
+        }
+        #as{
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cn">Item 1</div>
+        <div class="cn">Item 2</div>
+        <div class="cn">Item 3</div>
+        <div class="cn">Item 4</div>
+        <div class="cn">Item 5</div>
+        <div class="cn" id="as">Item 6</div>
+        <div class="cn">Item 7</div>
+        <div class="cn">Item 8</div>
+        <div class="cn">Item 9</div>
+        <div class="cn">Item 10</div>
+    </div>
+    
+</body>
+</html>
