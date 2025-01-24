@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.grid-item.small {
+    background-color: #4caf50;
+}
+.grid-item.medium{
+    background-color: blue;
+}
