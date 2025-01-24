@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Color</title>
+    <style>
+        body{
+            color: purple;
+        }
+        div{
+            background-color: currentColor;
+            background-color: orange;
+            padding: 15px;
+            border: 10px solid currentColor;
+            box-shadow: 1px 1px 20px currentColor;
+        }
+        div p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>The currentColor Keyword</h2>
+    <p>this is some text in the body part....</p>
+    <div>
+        <p>this div's background-color is set to the currentColor value of the body element</p>
+    </div>
+</body>
+</html>
